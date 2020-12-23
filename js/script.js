@@ -42,7 +42,7 @@ $(document).ready(function () {
 
 	$('.owl-carousel').owlCarousel({
 	    loop:true,
-	    items: 7,
+	    items: 8,
 	    autoplay:true,
 	    autoplayTimeout:5000,
 	    autoplayHoverPause:true,
@@ -58,6 +58,12 @@ $(document).ready(function () {
 	        },
 	        938:{
 	            items:4
+	        },
+	        1100: {
+	        	items:5
+	        },
+	        1300: {
+	        	items:6
 	        }
 	    }
 	});
@@ -91,7 +97,7 @@ $(document).ready(function () {
 		    });
     	}
 
-    	if(!countUpFinished && window.pageYOffset > statsTopOffset - $(window).height() + 220 ) {
+    	if(!countUpFinished && window.pageYOffset > statsTopOffset - $(window).height() + 200 ) {
 		    $(".counter").each(function () {
 		    	var element = $(this);
 		    	var endVal = parseInt(element.text());
